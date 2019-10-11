@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+<ion-input placeholder="Enter name" [(ngModel)]="name">Name</ion-input>
+</ion-header>
+
+<ion-header>
+<ion-input placeholder="Enter email" [(ngModel)]="email" type="email">Email</ion-input>
+</ion-header>
+
+<ion-header>
+<ion-input placeholder="Enter password" [(ngModel)]="password" type="password"> Password</ion-input>
+</ion-header>
+
+<ion-content>
+<ion-button color="dark" (click)="register()" [routerLink]="['/home']">Save</ion-button>
+</ion-content>

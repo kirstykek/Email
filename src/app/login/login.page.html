@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item>
+<ion-input placeholder="Email" [(ngModel)]="email" type="email">Email:</ion-input>
+</ion-item>
+
+<ion-item>
+<ion-input placeholder="Password" [(ngModel)]="password" type="password">Password:</ion-input>
+</ion-item>
+
+<ion-content>
+<ion-button color="dark" [routerLink]="['/home']" (click)="login()">login</ion-button>
+<ion-button color="dark" (click)="resertPassword()">Forgotpasword</ion-button>
+<a [routerLink]="['/register']">Click here to Register</a>
+
+
+
+</ion-content>
